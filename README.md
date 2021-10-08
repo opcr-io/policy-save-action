@@ -9,7 +9,7 @@ Save policy image to file.
 
 ### `tag`
 
-**Required** The image tag to be pushed to the registry. 
+**Required** The tag of local image to be saved. 
 
 Default: empty
 

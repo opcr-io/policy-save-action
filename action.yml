@@ -6,7 +6,7 @@ branding:
   color: blue
 inputs:
   tag:
-    description: "local image tag to be saved"
+    description: "tag of local image to be saved"
     required: true
   file:
     description: "output file path"
