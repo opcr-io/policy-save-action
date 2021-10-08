@@ -1,0 +1,21 @@
+name: "Policy Save"
+description: "Save policy image to file or stdout"
+author: "Aserto Inc."
+branding:
+  icon: save
+  color: blue
+inputs:
+  tag:
+    description: "local image tag to be saved"
+    required: true
+  file:
+    description: "output file path"
+    required: true    
+  verbosity:
+    description: "verbosity level [info|error|debug|trace]"
+    required: true
+    default: error
+runs:
+  using: docker
+  image: 'docker://ghcr.io/opcr-io/policy:0.0'
+  entrypoint: /app/save.sh
