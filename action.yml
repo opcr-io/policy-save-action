@@ -10,12 +10,12 @@ inputs:
     required: true
   file:
     description: "output file path"
-    required: true    
+    required: true
   verbosity:
     description: "verbosity level [info|error|debug|trace]"
     required: true
     default: error
 runs:
   using: docker
-  image: 'docker://ghcr.io/opcr-io/policy:0.0'
+  image: 'docker://ghcr.io/opcr-io/policy:0.1'
   entrypoint: /app/save.sh
